@@ -2,10 +2,8 @@
 
 /* CSS Document */
 
-
-
-	/* Custom Fonts
-	* --------------------------------------- */
+/* Custom Fonts
+* --------------------------------------- */
 	
 @font-face
 {
@@ -16,7 +14,9 @@
 	font-style: normal;
 }
 
-/* apply a natural box layout model to all elements */
+/* Apply a natural box layout model to all elements
+* --------------------------------------- */
+
 *,
 *:before,
 *:after
@@ -43,6 +43,10 @@ body
 	-webkit-font-smoothing: antialiased;
 	text-align: center;
 }
+
+
+/* Text Styles
+* --------------------------------------- */
 
 h1
 {
@@ -87,6 +91,27 @@ button
 	text-transform: uppercase;
 }
 
+/* CTA styles
+* --------------------------------------- */
+
+.r1_cta1
+{
+	background-color: #000000;
+}
+
+.r2_cta1
+{
+	background-color: #e5211f;
+}
+
+.r2_cta2
+{
+	background-color: #451f09;
+}
+
+/* Layout
+* --------------------------------------- */
+
 nav
 {
 	background-color: rgba(247,255,0,1.00);
@@ -111,17 +136,9 @@ article
 	clear: both;
 }
 
-.rotation{height:72%;}
 
-.promos{height:36%;}
-
-.centerMessaging
-{
-	position: relative;
-	top: 35%;
-	transform: translateY(-20%);
-}
-
+/* Prevents the first article from going under the fixed header
+* --------------------------------------- */
 article:nth-child(1)
 {
 	margin-top: 13.5%;
@@ -169,17 +186,18 @@ img
 	display: block;
 }
 
-.r1_cta1
+
+/* This vertical centers the callout messaging
+* --------------------------------------- */
+
+.rotation{height:72%;}
+
+.promos{height:36%;}
+
+.centerMessaging
 {
-	background-color: #000000;
+	position: relative;
+	top: 35%;
+	transform: translateY(-20%);
 }
 
-.r2_cta1
-{
-	background-color: #e5211f;
-}
-
-.r2_cta2
-{
-	background-color: #451f09;
-}
