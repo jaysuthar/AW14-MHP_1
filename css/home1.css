@@ -31,7 +31,7 @@ body
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
-	background-color: #F9FF06;
+	background-color:#000000;
 	font-size: 62.5%; /*16px down to 10px - 1em is 10px, 0.8em is 8px, 1.6em is 16px*/
 	font-family: 'proxima_novaregular';
 	color: #000000;
@@ -55,59 +55,33 @@ nav
 	position: fixed;
 	top: 0;
 	z-index: 10;
-	height: auto;/*	background-image: url(../images/header.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;*/
-	clear:both;
-}
-
-article
-{
-	display: block;
-	width: 100%;
 	height: auto;
-	position: relative;
-	float: left;
-	clear: both;
+	clear:both;
 }
 
 /* Prevents the first article from going under the fixed header
 * --------------------------------------- */
+
 article:nth-child(1)
 {
 	margin-top: 13.5%;
 }
 
-/* Header for overlay effects
+/* Overlay effects
 * --------------------------------------- */
 
-article > header
+article
 {
-	position: absolute;
-	background-color: rgba(0,0,0,0.5);
-	top: 0;
-	right: 0;
-	height: 100%;
 	width: 100%;
-	float: left;
-	
-	opacity: 1;
-	transition: opacity 0.5s ease-out; /* vendorless fallback */
-	-o-transition: opacity 0.5s ease-out; /* opera */
-	-ms-transition: opacity 0.5s ease-out; /* IE 10 betas, not needed in final build. */
-	-moz-transition: opacity 0.5s ease-out; /* Firefox */
-	-webkit-transition: opacity 0.5s ease-out; /*safari and chrome */
+	height:inherit;
+	overflow: hidden;
+	position: relative;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
 }
 
-article > header:hover
-{
-	opacity: 0;
-	transition: opacity 0.5s ease-in; /* vendorless fallback */
-	-o-transition: opacity 0.5s ease-in; /* opera */
-	-ms-transition: opacity0.5s ease-in; /* IE 10 betas, not needed in final build. */
-	-moz-transition: opacity 0.5s ease-in; /* Firefox */
-	-webkit-transition: opacity 0.5s ease-in; /*safari and chrome */
-}
 
 img
 {
@@ -120,20 +94,60 @@ img
 	display: block;
 }
 
+article > img
+{
+	width: 100%;
+	height: auto;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+}
+
+article:hover > img
+{
+	transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	opacity:0.4;
+}
+
+article .overlay
+{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all .5s;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	cursor: pointer;
+}
+
+article:hover .overlay
+{
+	opacity: 1;
+}
 
 /* This vertical centers the callout messaging
 * --------------------------------------- */
 
 .rotation{height:72%;}
 
-.promos{height:36%;}
+.promo{height:36%;}
 
-.centerMessaging
+article .overlay > header
 {
 	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 35%;
+	transform: translateY(-20%);
 }
+
 
 /* Text Styles
 * --------------------------------------- */
@@ -204,59 +218,4 @@ p
 .r2_cta2
 {
 	background-color: #451f09;
-}
-
-
-/**/
-
-article.hover-details
-{
-	width: 100%;
-	height:inherit;
-	overflow: hidden;
-	position: relative;
-	transition: all 1s;
-	-moz-transition: all 1s;
-	-webkit-transition: all 1s;
-	-o-transition: all 1s;
-}
-
-article.hover-details > img
-{
-	width: 100%;
-	height: auto;
-	transition: all 1s;
-	-moz-transition: all 1s;
-	-webkit-transition: all 1s;
-	-o-transition: all 1s;
-}
-
-article.hover-details:hover > img
-{
-	transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	-o-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-}
-
-article.hover-details .details
-{
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transition: all .5s;
-	-moz-transition: all .5s;
-	-webkit-transition: all .5s;
-	-o-transition: all .5s;
-	cursor: pointer;
-}
-
-article.hover-details:hover .details
-{
-	opacity: 1;
-	background-color:rgba(0,0,0,0.5);
 }
