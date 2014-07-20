@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Autumn Winter 2014 Monsoon Homepage Concept 0</title>
+	<meta name="author" content="Jay Suthar" />
+	<meta name="description" content="fullPage fixed header." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+
+
+	<link rel="stylesheet" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" href="css/home1.css" />
+    
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script src="../vendors/jquery.slimscroll.min.js"></script>
+
+	<script src="../jquery.fullPage.js"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+				css3: true
+			});
+		});
+	</script>
+    </head>
+<body>
+
+<nav>
+<!--<img src="images/header.jpg" alt="monsoon header">-->
+</nav>
+
+
+<section id="fullpage">
+
+<article id="rotation1">
+    <header>
+                <h1>modern<br>elegance</h1>
+                <p>Smart and super-chic, these hard-working pieces deserve a place in the modern woman’s wardrobe.</p>
+                <button class="r1_cta1">Shop New In Clothing ></button>
+        </header>
+        <img src="images/r1.jpg" alt="rotation 1">
+</article>
+
+<article id="rotation2">
+        <header>
+                <h1>Let’s<br>Dance</h1>
+                <p>Dazzling dresses &amp; beautiful separates ensure she'll shine this party season.</p>
+                <button class="r2_cta1">Shop New In Clothing ></button>
+                <button class="r2_cta2">VIEw the LOOKBOOK > ></button>
+        </header>
+    <img src="images/r2.jpg" alt="rotation 2">
+</article>
+
+<article id="promo1">
+        <header>
+                <h2>DENIM</h2>
+                <button>VIEw the LOOKBOOK ></button>
+        </header>
+    <img src="images/promo1.jpg" alt="promo 1">
+</article>
+
+
+<article id="promo2">
+        <header>
+                <h2>effortless style</h2>
+                <button>Shop occasion ></button>
+        </header>
+    <img src="images/promo2.jpg" alt="promo 2">
+</article>
+
+
+</section>
+</body>
+</html>

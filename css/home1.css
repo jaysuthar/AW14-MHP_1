@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+
+	/* Custom Fonts
+	* --------------------------------------- */
+	
+@font-face
+{
+	font-family: 'proxima_novaregular';
+	src: url('../fonts/ProximaNova-Reg-webfont.eot');/* IE9 Compat Modes */
+	src: url('../fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'),/* IE6-IE8 */  url('../fonts/ProximaNova-Reg-webfont.woff') format('woff'),/* Modern Browsers */  url('../fonts/ProximaNova-Reg-webfont.ttf') format('truetype'),/* Safari, Android, iOS */  url('../fonts/ProximaNova-Reg-webfont.svg#proxima_novaregular') format('svg');/* Legacy iOS */
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* apply a natural box layout model to all elements */
+*,
+*:before,
+*:after
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body
+{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #CCC;
+	font-size: 18px;
+	color: #000000;
+	background-attachment: scroll;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100%;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+}
+
+/* Style for our header texts
+	* --------------------------------------- */
+
+
+	/* Fixed header
+	* --------------------------------------- 
+	header{
+	position: fixed;
+	height: 8%;
+	display: block;
+	width: 100%;
+	background: #333;
+	z-index: 9;
+	text-align: center;
+	color: #f2f2f2;
+	padding-top: 0;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 8%;
+	top: 0px;
+	}*/
+	
+nav
+{
+	background-color: rgba(186,0,255,1.00);
+	display: block;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	height: 7.74%;
+	background-image: url(../images/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+article
+{
+	display: block;
+	width: 100%;
+	height: auto;
+	position: relative;
+	float: left;
+	clear:both;
+}
+
+article:nth-child(1)
+{
+	margin-top: 5%;
+}
+
+article header
+{
+	position: absolute;
+	background-color: rgba(0,0,0,0.46);
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	float: left;
+
+    opacity: 1;
+            transition: opacity 0.5s ease-out; /* vendorless fallback */
+         -o-transition: opacity 0.5s ease-out; /* opera */
+        -ms-transition: opacity 0.5s ease-out; /* IE 10 betas, not needed in final build. */
+       -moz-transition: opacity  0.5s ease-out; /* Firefox */
+    -webkit-transition: opacity 0.5s ease-out; /*safari and chrome */
+}
+
+article header:hover{
+    opacity: 0;    
+	            transition: 0.5s ease-in; /* vendorless fallback */
+         -o-transition: 0.5s ease-in; /* opera */
+        -ms-transition:0.5s ease-in; /* IE 10 betas, not needed in final build. */
+       -moz-transition:  0.5s ease-in; /* Firefox */
+    -webkit-transition: 0.5s ease-in; /*safari and chrome */
+
+}​
+
+article header h1
+{
+	font-size: 5em;
+	font-family: 'proxima_novaregular';
+	text-transform: uppercase;
+	color: red;
+	margin: 0;
+	padding: 0;
+	display: block;
+	letter-spacing:1em;
+}
+
+article header h2
+{
+	font-size: 2em;
+	font-family: 'proxima_novaregular';
+	text-transform: uppercase;
+	color: white;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+article header p
+{
+	font-size: 2em;
+	font-family: 'proxima_novaregular';
+	color: white;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+article img
+{
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	float: left;
+	display: block;
+  
+}
