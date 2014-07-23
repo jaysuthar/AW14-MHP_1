@@ -27,7 +27,7 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
 				anchors: ['1', '2', '3', '4'],
-				sectionsColor: ['#000', '#1BBC9B', '#60E1FF', '#09FF54'],
+				//sectionsColor: ['#000', '#1BBC9B', '#60E1FF', '#09FF54'],
 				navigation: true,
 				navigationPosition: 'right',
 				navigationTooltips: ['Rotation 1', 'Rotation 2', 'Promos', 'Promo 2'],
@@ -36,8 +36,6 @@ $(document).ready(function() {
 			});
 </script>
 
-
-
 </head>
 
 <body>
@@ -45,43 +43,57 @@ $(document).ready(function() {
 <nav> <img src="images/header.jpg" alt="monsoon header"> </nav>
 
 <section id="fullpage">
-    <article class="section">
     
-    <header>
+    <article class="section rotation">
+    
+<img src="images/r1.jpg">
+    <div class="overlay">
+      <header>
         <h1>modern<br>
           elegance</h1>
         <p>Smart and super-chic, these hard-working<br>
           pieces deserve a place in the modern<br>
           woman’s wardrobe.</p>
         <a href="#" class="btn r1_cta1">Shop New In Clothing ></a>
-     </header>
-    <img src="images/r1.jpg"> 
+        </header>
+    </div>
     </article>
     
     
     <article class="section">
     <img src="images/r2.jpg">
+    <div class="overlay">
     <header>
         <h1>Let’s<br>
           Dance</h1>
         <p>Dazzling dresses &amp; beautifulseparates<br>
           ensure she'll shine this party season.</p>
         <a href="#" class="btn r2_cta1">Shop New In Clothing ></a> <br>
-        <a href="#" class="btn r2_cta2">VIEw the LOOKBOOK ></a> </header>
+        <a href="#" class="btn r2_cta2">VIEw the LOOKBOOK ></a>
+        </header>
+        </div>
     </article>
+    
     <article class="section">
     
-    <div class="promos"><header>
+    <div class="promos">
     <img src="images/promo1.jpg">
+    <div class="overlay">
+    <header>
         <h2>DENIM</h2>
-        <a href="#" class="btn">VIEw the LOOKBOOK ></a> </header></div>
+        <a href="#" class="btn">VIEw the LOOKBOOK ></a>
+        </header>
+        </div>
+        </div>
     
     <div class="promos">
     <img src="images/promo2.jpg">
+    <div class="overlay">
     <header>
         <h2>effortless style</h2>
         <a href="#" class="btn">Shop occasion ></a>
         </header>
+    </div>
     </div>
     
     </article>

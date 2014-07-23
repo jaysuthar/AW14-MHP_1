@@ -87,8 +87,9 @@ html, body {
 #fp-nav {
     position: fixed;
     z-index: 100;
-    margin-top: -32px;
-    top: 50%;
+ /*   margin-top: -32px;*/
+    bottom: 1%;
+	left:1%;
     opacity: 1;
 }
 #fp-nav.right {
@@ -101,6 +102,7 @@ html, body {
     position: absolute;
     z-index: 4;
     left: 50%;
+	bottom:5%;
     opacity: 1;
 }
 .fp-slidesNav.bottom {
@@ -118,8 +120,8 @@ html, body {
 .fp-slidesNav li {
     display: block;
     width: 14px;
-    height: 13px;
-    margin: 7px;
+    height: 16px;
+    margin-bottom: 2px;
     position:relative;
 }
 .fp-slidesNav li {
@@ -141,10 +143,10 @@ html, body {
 }
 #fp-nav span,
 .fp-slidesNav span {
-    top: 2px;
-    left: 2px;
-    width: 8px;
-    height: 8px;
+/*    bottom: 0;
+    left: 20px;*/
+    width: 6px;
+    height: 6px;
     border: 1px solid #FFF;
     background: none;
     border-radius: 50%;
